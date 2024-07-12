@@ -65,6 +65,41 @@
         }
 
         /* Projects Section Styles */
+        .projects-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .projects-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .projects-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .projects-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .projects-item h3 {
+            font-size: 1.8em;
+        }
+
+        .projects-item p {
+            font-size: 17.6px;
+            color: #777;
+        }
     </style>
 </head>
 
@@ -83,6 +118,34 @@
                 elit cursus vulputate.</p>
         </div>
     </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-items">
+                <div class="projects-item">
+                    <img src="img.jpg" alt="img">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img.jpg" alt="img">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img.jpg" alt="img">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                </div>
+                <div class="projects-item">
+                    <img src="img.jpg" alt="img">
+                    <h3>Project 4</h3>
+                    <p>Description of Project 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
